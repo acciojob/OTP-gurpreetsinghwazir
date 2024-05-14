@@ -1,13 +1,7 @@
-const inputs = document.querySelectorAll("#code");
-for (let i = 0; i < inputs.length; i++) {
-  const input = inputs[i];
-
-  input.addEventListener("input", function () {
-    // handling normal input
-    if (input.value.length == 1 && i+1 < inputs.length) {
-     inputs[i+1].focus();
+function Display(from, too) {
+    let fromLength = from.value.length;
+    let tooLength = parseInt(from.getAttribute("maxlength")); // Convert to number
+    if (fromLength === tooLength) {
+        document.getElementById(too).focus();
     }
-    /* ... other codes (a) ... */
-  });
-  /* ... other codes (b) ... */
 }
