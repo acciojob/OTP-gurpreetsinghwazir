@@ -1,7 +1,11 @@
-function Display(from, too) {
-    let fromLength = from.value.length;
-    let tooLength = parseInt(from.getAttribute("maxlength")); // Convert to number
-    if (fromLength === tooLength) {
-        document.getElementById(too).focus();
-    }
+let inPut = document.querySelectorAll(".code");
+
+for (let i = 0;  i < inPut.length -1; i++) {
+	inPut[i].addEventListener("keyup", Display)
+	
+	function Display(eventDetails) {
+		this.nextElementSibling.focus();
+		
+	}
+	
 }
