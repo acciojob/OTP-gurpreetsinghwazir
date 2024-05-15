@@ -20,12 +20,12 @@
     flex-wrap: wrap;
 
   }
-  .code:focus {
+  .code-container input:focus {
         background-color: wheat;
   }
   
   
-  .code{
+  .code-container input{
       
       margin: 8px; 
       border-radius: 5px;
