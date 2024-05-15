@@ -1,9 +1,15 @@
 let inPut = document.querySelectorAll(".code");
-for (let i = 0;  i < inPut.length -1; i++) {
-	inPut[i].addEventListener("keyup", Display)
-		function Display(eventDetails) {
-			this.nextElementSibling.focus();	
-	}	
-}
 
-	
+for (let i = 0; i < inPut.length; i++) {
+    inPut[i].addEventListener("keyup", Display);
+
+    function Display(eventDetails) {
+        if (eventDetails.keyCode == 8) { // Check if backspace key is pressed
+            if (this.value === "" && i > 0) { // Check if current input is empty and not the first one
+                this.previousElementSibling.focus(); // Focus on the previous input
+            }
+        } else {
+            this.nextElementSibling.focus(); // Focus on the next input for other key presses
+        }
+    }
+}
