@@ -1,7 +1,7 @@
 let inPut = document.querySelectorAll("input");
 
-for (let i = 0; i < inPut.length; i++) {
-    inPut[i].addEventListener("keyup", Display);
+for (let i = 0; i < inPut.length; i++) { 
+    inPut[i].addEventListener("keyup", Display)
 
     function Display(eventDetails) {
         if (eventDetails.keyCode == 8) { // Check if backspace key is pressed
