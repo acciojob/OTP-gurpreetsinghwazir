@@ -1,4 +1,4 @@
-let inPut = document.querySelectorAll("input");
+let inPut = document.querySelectorAll("input").focus();
 
 for (let i = 0; i < inPut.length; i++) { 
     inPut[i].addEventListener("keyup", Display)
