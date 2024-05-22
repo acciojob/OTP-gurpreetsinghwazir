@@ -1,8 +1,8 @@
 let inPut = document.getElementsByClassName("code")
-
-// let firstFoc = document.getElementsByClassName("code")[0];
-// firstFoc.focus();   
-   
+ 
+let firstFoc = document.getElementsByClassName("code")[0];
+firstFoc.focus();   
+     
 for (let i = 0; i < inPut.length; i++) {  
     inPut[i].addEventListener("keyup", Display)
  
