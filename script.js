@@ -1,6 +1,6 @@
 let inPut = document.getElementsByClassName("code")
  
-let firstFoc = document.getElementsByClassName("code")[0];
+let firstFoc = document.getElementById("code-1");
 firstFoc.focus();   
      
 for (let i = 0; i < inPut.length; i++) {  
