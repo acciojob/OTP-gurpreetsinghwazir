@@ -13,6 +13,6 @@ for (let i = 0; i < inPut.length; i++) {
                 this.previousElementSibling.focus(); // Focus on the previous input
             }
         } else {
-            this.nextElementSibling.select(); // Focus on the next input for other key presses
+            this.nextElementSibling.focus(); // Focus on the next input for other key presses
         }
     }
