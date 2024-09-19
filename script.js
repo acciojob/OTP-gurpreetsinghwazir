@@ -1,11 +1,11 @@
 let inPut = document.getElementsByClassName("code")
- 
-let firstFoc = document.getElementById("code-1");
+  
+let firstFoc = document.getElementsByClassName("code")[0];
 firstFoc.focus();   
-     
+       
 for (let i = 0; i < inPut.length; i++) {  
-    inPut[i].addEventListener("keyup", Display)
- 
+    inPut[i].addEventListener("keyup", Display) 
+}
     function Display(eventDetails) {
 
         if (eventDetails.keyCode == 8) { // Check if backspace key is pressed
@@ -16,4 +16,3 @@ for (let i = 0; i < inPut.length; i++) {
             this.nextElementSibling.select(); // Focus on the next input for other key presses
         }
     }
-}
